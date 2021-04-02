@@ -1,0 +1,122 @@
+.address_btn{
+  padding-top: 20rpx;
+}
+.address_row{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-bottom: 1px solid var(--themeColor);
+  font-weight: 600;
+  .row_left{
+      .address_name{
+
+      }
+      .address_address{
+
+      }
+  }
+  .row_right{
+      text-align: right;
+  }
+}
+.cart_content{
+  margin-bottom: 90rpx;
+  .cart_title{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title{
+          font-size: 36rpx;
+          line-height: 10 0rpx;
+          color: var(--themeColor);
+          padding: 20rpx;
+      }
+      view:last-child{
+          width: 98%;
+          height: 4rpx;
+          background-color: var(--themeColor);
+          border-radius: 15rpx;
+      }
+      
+  }   
+  .cart_main{
+      display: flex;  
+      padding:10rpx 20rpx;
+      border-bottom: 1px solid #ccc;
+          .cart_img_wrap{
+              flex: 3;
+          }
+          .cart_info_wrap{
+              flex: 7;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              padding-left: 10rpx;
+              .info_title{
+
+              }
+              .info_content{
+                  display: flex;
+                  justify-content: space-between;
+                  .content_price{
+                      color: var(--themeColor);
+                      font-weight: 600;
+                      
+                  }
+                  .content_num{
+                      display: flex;
+                      align-items: center;
+                      view{
+                          width: 50rpx;
+                          height: 50rpx;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                      }
+                  }
+              
+          }
+      }
+  }
+
+}
+.footer_tool{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 90rpx;
+  display: flex;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  .total_price{
+      flex: 3;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .total{
+          display: flex;
+          flex-direction: column;
+          text-align: right;
+          padding-right: 10rpx;
+          .top{
+              color: var(--themeColor);
+          }
+          .bottom{
+              font-size: 24rpx;
+              font-weight: 600;
+          }
+      }
+  }
+  .order_pay{
+      flex: 1;
+      background-color: var(--themeColor);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      font-size: 26rpx;
+      color: #fff;
+      letter-spacing: .1em;
+  }
+}

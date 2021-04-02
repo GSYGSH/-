@@ -1,0 +1,54 @@
+<view class="detail_swiper">
+    <block wx:if='{{detailList.pics.length != 0}}'>
+        <swiper autoplay circular indicator-dots>
+            <swiper-item wx:for="{{detailList.pics }}" wx:key="pics_id" bindtap='swiperItemClick' data-index='{{index}}'>
+                <image mode="widthFix" src="{{item.pics_mid}}"></image>
+            </swiper-item>
+        </swiper>
+    </block>
+    <block wx:else>
+        <image mode="widthFix" src='https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg' class="default_image"></image>
+    </block>
+</view>
+<view class="goods_price">￥{{detailList.goods_price}}</view>
+<view class="goods_name_row">
+    <view class="goods_name">{{detailList.goods_name}}</view>
+    <view class="goods_collect {{isCollect?'goods_collect_active':''}}" bindtap='handleCollect'>
+        <text class="iconfont iconshoucang1" wx:if="{{!isCollect}}"></text>
+        <text class="iconfont iconshoucang" wx:else></text>
+        <view class="collect_text">收藏</view>
+    </view>
+</view>
+<view class="goods_info">
+    <view class="goods_info_title">图文样式</view>
+    <view class="goods_info_content">
+        <!-- 富文本 -->
+        <rich-text nodes="{{detailList.goods_introduce}}"></rich-text>
+    </view>
+</view>
+<view class="detail_bottom">
+    <view class="detail_item">
+        <view class="item_icon">
+            <text class="iconfont iconkefu"></text>
+            <view class="icon_txt">客服</view>
+            <button open-type="contact"></button>
+        </view>
+        <view class="item_icon">
+            <text class="iconfont iconfenxiang"></text>
+            <view class="icon_txt">分享</view>
+            <button open-type="share"></button>
+        </view>
+        <view class="item_icon">
+            <navigator url="/pages/cart/index" open-type="switchTab">
+                <text class="iconfont icongouwuche"></text>
+                <view class="icon_txt">购物车</view>
+            </navigator>
+        </view>
+        <view class="item_icon">
+            <view class="addcart" bindtap='handleAddGood'>加入购物车</view>
+        </view>
+        <view class="item_icon">
+            <view class="buy">立即购买</view>
+        </view>
+    </view>
+</view>

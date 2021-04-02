@@ -1,0 +1,107 @@
+.address_btn {
+  padding-top: 20rpx;
+}
+.address_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-bottom: 1px solid var(--themeColor);
+  font-weight: 600;
+}
+.address_row .row_right {
+  text-align: right;
+}
+.cart_content {
+  margin-bottom: 90rpx;
+}
+.cart_content .cart_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart_content .cart_title .title {
+  font-size: 36rpx;
+  line-height: 10 0rpx;
+  color: var(--themeColor);
+  padding: 20rpx;
+}
+.cart_content .cart_title view:last-child {
+  width: 98%;
+  height: 4rpx;
+  background-color: var(--themeColor);
+  border-radius: 15rpx;
+}
+.cart_content .cart_main {
+  display: flex;
+  padding: 10rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.cart_content .cart_main .cart_img_wrap {
+  flex: 3;
+}
+.cart_content .cart_main .cart_info_wrap {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 10rpx;
+}
+.cart_content .cart_main .cart_info_wrap .info_content {
+  display: flex;
+  justify-content: space-between;
+}
+.cart_content .cart_main .cart_info_wrap .info_content .content_price {
+  color: var(--themeColor);
+  font-weight: 600;
+}
+.cart_content .cart_main .cart_info_wrap .info_content .content_num {
+  display: flex;
+  align-items: center;
+}
+.cart_content .cart_main .cart_info_wrap .info_content .content_num view {
+  width: 50rpx;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_tool {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 90rpx;
+  display: flex;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+.footer_tool .total_price {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer_tool .total_price .total {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-right: 10rpx;
+}
+.footer_tool .total_price .total .top {
+  color: var(--themeColor);
+}
+.footer_tool .total_price .total .bottom {
+  font-size: 24rpx;
+  font-weight: 600;
+}
+.footer_tool .order_pay {
+  flex: 1;
+  background-color: var(--themeColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 26rpx;
+  color: #fff;
+  letter-spacing: 0.1em;
+}

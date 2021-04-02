@@ -1,0 +1,60 @@
+.banner{
+  width: 750rpx;
+  height: 360rpx;
+}
+.banner image{
+  width:100%;
+}
+.cate{
+  display: flex;
+}
+.cate navigator{
+  flex: 1;
+  padding: 20rpx;
+}
+.cate  image{
+  width: 100%;
+}
+
+.floor{
+  display: flex;
+  flex-flow: row wrap;
+  .floor_group{
+    width: 100%;
+    .floor_title{
+      padding: 10px 0;
+      width: 100%;
+      image{
+        width: 100%;
+      }
+    }
+    .floor_list{
+      width: 100%;
+      overflow: hidden;
+      navigator{
+        box-sizing: border-box;
+        float: left;
+        width: 33.3vw;
+      &:first-child{
+        height: calc(33.3vw * 386 / 232 ;)
+      }
+
+      &:nth-last-child(-n+4){
+        height: calc(33.3vw * 386 / 232 / 2);
+        border-left:10px solid #fff
+      }
+
+      &:nth-child(2),&:nth-child(3){
+        border-bottom: 10px solid #fff;
+      }
+      
+    }
+      image{
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+
+  }
+}

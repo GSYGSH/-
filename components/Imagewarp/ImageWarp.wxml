@@ -1,0 +1,9 @@
+<view class="image_wrap">
+    <view class="image_wrap_img">
+            <image mode="widthFix" src="{{src}}">
+    </image>
+    </view>
+    <view class="delete" bindtap='iamgeDeleteClick'>
+        ×
+    </view>
+</view>

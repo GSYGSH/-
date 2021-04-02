@@ -1,0 +1,49 @@
+<!-- 收货地址 -->
+<view class="revice_address_row">
+    <view class="address_row">
+        <view class="row_left">
+            <view class="address_name">收件人：{{address.userName}}</view>
+            <view class="address_address">{{address.allAddress}}</view>
+        </view>
+        <view class="row_right">{{address.telNumber}}</view>
+    </view>
+</view>
+<!-- 购物车内容 -->
+<view class="cart_content" >
+    <view class="cart_title">
+        <view class="title">购物车</view>
+        <view></view>
+    </view>
+    <view class="cart_main" wx:for="{{goodsList}}" wx:key="goods_id">
+        <navigator class="cart_img_wrap" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+            <image src="{{item.goods_small_logo}}" mode="widthFix"></image>
+        </navigator>
+        <view class="cart_info_wrap">
+            <view class="info_title">{{item.goods_name}}</view>
+            <view class="info_content">
+                <view class="content_price">￥{{item.goods_price}}</view>
+                <view class="content_num">
+                    <view>× {{item.num}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 底部工具栏 -->
+<view class="footer_tool">
+    <view class="total_price">
+        <view class="total">
+            <view class="top">
+                合计：￥{{total}}
+            </view>
+            <view class="bottom">
+                包含运费
+            </view>
+        </view>
+    </view>
+    <view class="order_pay">
+        <view class="pay" bindtap='handleOrderPay'>
+            支付({{checkNum}})
+        </view>
+    </view>
+</view>

@@ -1,0 +1,17 @@
+.order_wrap .order_item {
+  border-bottom: 1px solid #ccc;
+  color: #666;
+}
+.order_wrap .order_item .order_item_list {
+  display: flex;
+  justify-content: space-between;
+  line-height: 50rpx;
+  padding: 0 20rpx;
+}
+.order_wrap .order_item .order_item_list .order_price_view {
+  color: var(--themeColor);
+  font-weight: 600;
+}
+.order_wrap .order_item:first-child {
+  border-top: 1px solid #ccc;
+}

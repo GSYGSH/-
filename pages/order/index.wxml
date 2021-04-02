@@ -1,0 +1,19 @@
+<Tabs tabs='{{tabs}}' bindtabsItemChange='handeleTabsItemChange' class="tabs">
+    <view class="order_wrap">
+        <view class="order_item" wx:for="{{orders}}" wx:key="order_id">
+            <view class="order_item_list">
+                <view>订单编号</view>
+                <view>{{item.order_number}}</view>
+            </view>
+            <view class="order_item_list">
+                <view>订单价格</view>
+                <view class="order_price_view">￥{{item.order_price}}</view>
+            </view>
+            <view class="order_item_list">
+                <view>订单日期</view>
+                <view>{{item.update_time}}</view>
+            </view>
+
+        </view>
+    </view>
+</Tabs>

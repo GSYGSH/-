@@ -1,0 +1,90 @@
+<view class="user_info_wrap">
+    <view class="user_img_wrap">
+        <block wx:if="{{userInfo.avatarUrl}}">
+            <image class="user_bg" src="{{userInfo.avatarUrl}}"></image>
+            <view class="user_info">
+                <image class="user_icon" src="{{userInfo.avatarUrl}}"></image>
+                <view class="user_name">{{userInfo.nickName}}</view>
+            </view>
+        </block>
+        <block wx:else>
+            <view class="user_login" >
+                <navigator url='/pages/login/index'>登陆</navigator>
+            </view>
+        </block>
+    </view>
+</view>
+<view class="user_content">
+    <view class="user_main">
+        <view class="history">
+            <navigator class="his_item" url="/pages/collect/index?type=1">
+                <view>0</view>
+                <view>收藏的店铺</view>
+            </navigator>
+            <navigator class="his_item" url="/pages/collect/index?type=2">
+                <view>{{collect.length}}</view>
+                <view>收藏的商品</view>
+            </navigator>
+            <navigator class="his_item" url="/pages/collect/index?type=3">
+                <view>0</view>
+                <view>关注的商品</view>
+            </navigator>
+            <navigator class="his_item" url="/pages/collect/index?type=4">
+                <view>0</view>
+                <view>我的足迹</view>
+            </navigator>
+        </view>
+        <view class="order">
+            <view class="order_title">
+                我的订单
+            </view>
+            <view class="order_content">
+                <navigator class="order_item" url="/pages/order/index?type=1">
+                    <view class="iconfont iconding_dan"></view>
+                    <view>全部订单</view>
+                </navigator>
+                <navigator class="order_item" url="/pages/order/index?type=2">
+                    <view class="iconfont iconfukuantongzhi"></view>
+                    <view>待付款</view>
+                </navigator>
+                <navigator class="order_item" url="/pages/order/index?type=3">
+                    <view class="iconfont iconkuaidiyunshu"></view>
+                    <view>待收货</view>
+                </navigator>
+                <navigator class="order_item" url="/pages/order/index?type=4">
+                    <view class="iconfont icontuihuotuikuan_dianpu"></view>
+                    <view>退款/退货</view>
+                </navigator>
+            </view>
+        </view>
+        <view class="address">
+            <navigator class="address">
+                收货地址管理
+            </navigator>
+        </view>
+        <view class="about">
+            <navigator class="kefu">
+                <view>
+                    联系客服
+                </view>
+                <view>
+                    400-618-4000
+                </view>
+            </navigator>
+            <navigator class="advise" url="/pages/feedback/index?type=1">
+                意见反馈
+            </navigator>
+            <navigator class="about">
+                关于我们
+            </navigator>
+        </view>
+        <view class="share">
+            <navigator open-type=''>
+                <button open-type="share"></button>
+                <view>
+                    把应用推荐给别人
+                </view>
+            </navigator>
+        </view>
+    </view>
+</view>

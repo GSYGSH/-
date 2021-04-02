@@ -1,0 +1,126 @@
+.user_img_wrap {
+  height: 45vh;
+  background-color: var(--themeColor);
+  position: relative;
+  overflow: hidden;
+}
+.user_img_wrap .user_bg {
+  transform: scale(1.1);
+  filter: blur(10rpx);
+}
+.user_img_wrap .user_info {
+  position: absolute;
+  width: 150rpx;
+  height: 150rpx;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.user_img_wrap .user_info image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.user_img_wrap .user_info view {
+  margin-top: 20rpx;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+}
+.user_img_wrap .user_login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  border: 1px solid greenyellow;
+  padding: 20rpx 50rpx;
+  border-radius: 15rpx;
+  text-align: center;
+}
+.user_content {
+  height: 55vh;
+  background-color: #eee;
+  position: relative;
+  color: #666;
+}
+.user_content .user_main {
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -20%);
+}
+.user_content .user_main view {
+  background-color: #fff;
+}
+.user_content .user_main .history {
+  height: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.user_content .user_main .history .his_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user_content .user_main .history .his_item view:first-child {
+  color: var(--themeColor);
+}
+.user_content .user_main .order .order_title {
+  text-indent: 0.5em;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #ccc;
+}
+.user_content .user_main .order .order_content {
+  display: flex;
+  justify-content: space-around;
+}
+.user_content .user_main .order .order_content .order_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rpx;
+}
+.user_content .user_main .order .order_content .order_item view:first-child {
+  color: var(--themeColor);
+  font-size: 35rpx;
+}
+.user_content .user_main .address {
+  line-height: 70rpx;
+  text-indent: 0.5em;
+}
+.user_content .user_main .about {
+  line-height: 70rpx;
+}
+.user_content .user_main .about navigator {
+  border-bottom: 1px solid #ccc;
+  text-indent: 0.5em;
+}
+.user_content .user_main .about .kefu {
+  display: flex;
+  justify-content: space-between;
+}
+.user_content .user_main .about .kefu view:last-child {
+  padding-right: 10rpx;
+}
+.user_content .user_main .share {
+  text-indent: 0.5em;
+  line-height: 70rpx;
+  position: relative;
+}
+.user_content .user_main .share button {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+.user_content .user_main > view {
+  margin-bottom: 20rpx;
+}
